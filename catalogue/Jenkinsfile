@@ -8,6 +8,8 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
+                sh 'pwd'
+                sh 'ls -lrt'
                 sh 'cd catalogue'
                 sh 'npm install'
             }
